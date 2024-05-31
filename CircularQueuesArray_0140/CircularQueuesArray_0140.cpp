@@ -83,6 +83,11 @@ public:
 				cout << queue_Array[FRONT_position] << "  ";
 				FRONT_position++;
 			}
+			cout << endl;
 		}
 	}
 };
+
+int main() {
+
+}
