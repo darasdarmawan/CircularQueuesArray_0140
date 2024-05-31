@@ -76,6 +76,13 @@ public:
 				cout << queue_Array[FRONT_position] << "  ";
 				FRONT_position++;
 			}
+
+			FRONT_position = 0;
+
+			while (FRONT_position <= REAR_position) {
+				cout << queue_Array[FRONT_position] << "  ";
+				FRONT_position++;
+			}
 		}
 	}
 };
