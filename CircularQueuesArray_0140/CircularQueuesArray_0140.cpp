@@ -6,5 +6,8 @@ class Queue {
 	int queue_Array[5];
 
 public:
-
+	Queue() {
+		FRONT = -1;
+		REAR = -1;
+	}
 };
