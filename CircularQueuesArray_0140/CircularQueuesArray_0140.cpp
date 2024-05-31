@@ -32,7 +32,7 @@ public:
 			else
 				REAR = REAR + 1;
 		}
-		queue_array[REAR] = num;
+		queue_Array[REAR] = num;
 	}
 
 	void remove() {
@@ -40,6 +40,11 @@ public:
 			cout << "Queue underflow\n";
 			return;
 		}
+		cout << "\nThe element deleted from queue is: " << queue_Array[FRONT] << "\n";
 
+		if (FRONT == REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
 	}
 };
