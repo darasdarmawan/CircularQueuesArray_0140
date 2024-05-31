@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-class Queue {
+class Queues {
 	int FRONT, REAR, max = 5;
 	int queue_Array[5];
 
 public:
-	Queue() {
+	Queues () {
 		FRONT = -1;
 		REAR = -1;
 	}
@@ -32,6 +32,14 @@ public:
 			else
 				REAR = REAR + 1;
 		}
-		
+		queue_array[REAR] = num;
+	}
+
+	void remove() {
+		if (FRONT == -1) {
+			cout << "Queue underflow\n";
+			return;
+		}
+
 	}
 };
